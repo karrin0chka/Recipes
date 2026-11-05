@@ -1,6 +1,9 @@
 package com.example.recipes;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -9,6 +12,7 @@ import androidx.core.view.WindowCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    private Button krakowSausageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +24,18 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        krakowSausageButton = findViewById(R.id.krakowSausageButton);
+        krakowSausageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                KrakowSausageActivity(v);
+            }
+        });
+    }
+
+    public void KrakowSausageActivity(View v) {
+        Intent intent = new Intent(this, KrakowSausage.class);
+        startActivity(intent);
     }
 }

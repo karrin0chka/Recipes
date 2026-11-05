@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorBackground">#EBEDEF</color>
+    <color name="colorBackgroundLogo">#CACFD2</color>
+    <color name="colorMain">#0E6655</color>
+    <color name="colorAdditionalButton">#626567</color>
 </resources>

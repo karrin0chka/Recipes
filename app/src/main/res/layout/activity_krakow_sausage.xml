@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KrakowSausage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/krakowSausage"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/colorBackgroundLogo"
+            android:text="@string/krakowSausage"
+            android:textAlignment="center"
+            android:textColor="@color/colorMain"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/massHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/krakowSausage"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="5sp"
+            android:text="@string/massHeadline"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/massInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/massHeadline"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="5sp"
+            android:backgroundTint="@color/colorMain"
+            android:ems="10"
+            android:hint="@string/massInput"
+            android:inputType="text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="155sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/massInput"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/colorAdditionalButton"
+            android:text="@string/clearButton"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/calculatorButton"
+            android:layout_width="155sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/massInput"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorMain"
+            android:text="@string/calculatorButton"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/ingredientsHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clearButton"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="20sp"
+            android:text="@string/ingredientsHeadline"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/proportionsHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clearButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="120sp"
+            android:text="@string/proportionsHeadline"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/resultHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clearButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40sp"
+            android:layout_marginTop="20dp"
+            android:text="@string/resultHeadline"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/saltHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clearButton"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="20sp"
+            android:text="@string/ingredientsHeadline"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/proportionsHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clearButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20sp"
+            android:layout_marginStart="120sp"
+            android:text="@string/proportionsHeadline"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/resultHeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clearButton"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40sp"
+            android:layout_marginTop="20dp"
+            android:text="@string/resultHeadline"
+            android:textSize="16sp" />
+
+
+        <Button
+            android:id="@+id/returnMainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/colorAdditionalButton"
+            android:text="@string/returnMainButton"
+            android:textSize="19sp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

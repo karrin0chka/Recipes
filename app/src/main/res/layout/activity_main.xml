@@ -7,13 +7,33 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
+        <TextView
+            android:id="@+id/mainHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:background="@color/colorBackgroundLogo"
+            android:text="@string/mainHeadline"
+            android:textAlignment="center"
+            android:textColor="@color/colorMain"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/krakowSausageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mainHeadline"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginTop="20sp"
+            android:backgroundTint="@color/colorMain"
+            android:text="@string/krakowSausage"
+            android:textSize="19sp" />
+    </RelativeLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

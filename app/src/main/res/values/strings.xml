@@ -1,3 +1,16 @@
 <resources>
-    <string name="app_name">Recipes</string>
+    <string name="app_name">Рецепты</string>
+    <!-- Основное -->
+    <string name="mainHeadline">Рецепты</string>
+    <string name="krakowSausage">Краковская колбаса</string>
+    <string name="returnMainButton">Назад</string>
+    <string name="calculatorButton">Рассчитать</string>
+    <string name="clearButton">Очистить</string>
+
+    <!-- Краковскккая колбаса -->
+    <string name="massHeadline">Введите итоговую массу (г):</string>
+    <string name="massInput">0</string>
+    <string name="ingredientsHeadline">Ингредиент:</string>
+    <string name="proportionsHeadline">Пропорция (г/кг):</string>
+    <string name="resultHeadline">Рассчёт:</string>
 </resources>
