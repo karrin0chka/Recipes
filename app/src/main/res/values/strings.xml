@@ -10,7 +10,30 @@
     <!-- Краковскккая колбаса -->
     <string name="massHeadline">Введите итоговую массу (г):</string>
     <string name="massInput">0</string>
-    <string name="ingredientsHeadline">Ингредиент:</string>
-    <string name="proportionsHeadline">Пропорция (г/кг):</string>
-    <string name="resultHeadline">Рассчёт:</string>
+    <string name="ingredientsHeadline">ИНГРЕДИЕНТ</string>
+    <string name="proportionsHeadline">Г/КГ</string>
+    <string name="resultHeadline">ИТОГ</string>
+    <string name="nullValue">0</string>
+    <string name="saltHeadline">СОЛЬ</string>
+    <string name="dextroseHeadline">ДЕКСТРОЗА</string>
+    <string name="mNutHeadline">МУСКАТ. ОРЕХ</string>
+    <string name="fragrantPepperHeadline">ДУШИСТ. ПЕРЕЦ</string>
+    <string name="blackPepperHeadline">ЧЁРНЫЙ ПЕРЕЦ</string>
+    <string name="whitePepperHeadline">БЕЛЫЙ ПЕРЕЦ</string>
+    <string name="garlicHeadline">ЧЕСНОК</string>
+    <string name="ascorbateHeadline">АСКОРБАТ</string>
+    <string name="phosphateHeadline">ФОСФАТ</string>
+    <string name="waterHeadline">ВОДА</string>
+
+    <string name="saltValue">18</string>
+    <string name="dextroseValue">3</string>
+    <string name="mNutValue">1</string>
+    <string name="fragrantPepperValue">0.5</string>
+    <string name="blackPepperValue">2</string>
+    <string name="whitePepperValue">0.5</string>
+    <string name="garlicValue">4</string>
+    <string name="ascorbateValue">0.5</string>
+    <string name="phosphateValue">3</string>
+    <string name="waterValue">50</string>
+
 </resources>
