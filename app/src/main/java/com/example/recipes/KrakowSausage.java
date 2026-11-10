@@ -1,6 +1,7 @@
 package com.example.recipes;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -19,7 +21,8 @@ import androidx.core.view.WindowInsetsCompat;
 public class KrakowSausage extends AppCompatActivity {
     private Button clearButton,
             calculatorButton,
-            returnMainButton;
+            returnMainButton,
+            infoButton;
 
     private EditText massInput;
     private TextView
@@ -62,6 +65,7 @@ public class KrakowSausage extends AppCompatActivity {
         calculatorButton = findViewById(R.id.calculatorButton);
         clearButton = findViewById(R.id.clearButton);
         returnMainButton = findViewById(R.id.returnMainButton);
+        infoButton = findViewById(R.id.infoButton);
 
         calculatorButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -132,6 +136,37 @@ public class KrakowSausage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 returnMainActivity(v);
+            }
+        });
+
+        infoButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(KrakowSausage.this);
+                builder.setTitle("Информация");
+                builder.setMessage("Мясо солить 5 дней\n" +
+                        "Мясо/жир: 75%/25%\n" +
+                        "Жирная: средняя решетка\n" +
+                        "Полужирная: подрезная решетка\n" +
+                        "Мясо: 1/3 мелкая\n" +
+                        "Мясо: 1/3 крупная\n" +
+                        "Мясо: 1/3 подрезная\n" +
+                        "Жир вмешивать руками\n" +
+                        "оболочка коллагеновая 45 мм\n" +
+                        "оболочку отрезать по 25 см\n" +
+                        "350 г фарша в 1 батон\n" +
+                        "\n" +
+                        "копчение до 65 град 20 мин\n"
+                );
+                builder.setPositiveButton("ОК", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Действие при нажатии ОК
+                    }
+                });
+                AlertDialog dialog = builder.create();
+                dialog.show(); // Показываем диалог
+
             }
         });
     }

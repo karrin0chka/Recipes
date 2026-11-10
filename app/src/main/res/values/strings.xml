@@ -7,6 +7,8 @@
     <string name="calculatorButton">Рассчитать</string>
     <string name="clearButton">Очистить</string>
     <string name="volumeInputError">Введите корректное значение</string>
+    <string name="infoButton">i</string>
+
 
 
     <!-- Краковскккая колбаса -->
