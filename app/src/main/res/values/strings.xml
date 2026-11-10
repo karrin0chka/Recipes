@@ -6,6 +6,8 @@
     <string name="returnMainButton">Назад</string>
     <string name="calculatorButton">Рассчитать</string>
     <string name="clearButton">Очистить</string>
+    <string name="volumeInputError">Введите корректное значение</string>
+
 
     <!-- Краковскккая колбаса -->
     <string name="massHeadline">Введите итоговую массу (г):</string>

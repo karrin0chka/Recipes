@@ -99,7 +99,7 @@
             android:layout_below="@+id/clearButton"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="30sp"
+            android:layout_marginEnd="40sp"
             android:text="@string/resultHeadline"
             android:textSize="16sp" />
 
@@ -113,15 +113,15 @@
             android:text="@string/saltHeadline"
             android:textSize="15sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/saltProportions"
-            android:layout_width="60sp"
-            android:layout_height="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/ingredientsHeadline"
             android:layout_marginStart="200sp"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="20sp"
             android:textSize="15sp"
-            android:hint="@string/saltValue"
+            android:text="@string/saltValue"
             />
 
         <TextView
@@ -130,7 +130,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/ingredientsHeadline"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="20sp"
             android:layout_marginEnd="50sp"
             android:hint="@string/nullValue"
             android:textSize="15sp" />
@@ -145,15 +145,15 @@
             android:text="@string/dextroseHeadline"
             android:textSize="15sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/dextroseProportions"
-            android:layout_width="60sp"
-            android:layout_height="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/saltHeadline"
             android:layout_marginStart="200sp"
-            android:layout_marginTop="5sp"
+            android:layout_marginTop="20sp"
             android:textSize="15sp"
-            android:hint="@string/dextroseValue" />
+            android:text="@string/dextroseValue" />
 
         <TextView
             android:id="@+id/dextroseResult"
@@ -161,7 +161,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/saltHeadline"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20sp"
             android:layout_marginEnd="50sp"
             android:hint="@string/nullValue"
             android:textSize="15sp" />
@@ -176,15 +176,15 @@
             android:text="@string/mNutHeadline"
             android:textSize="15sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/mNutProportions"
-            android:layout_width="60sp"
-            android:layout_height="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/dextroseHeadline"
             android:layout_marginStart="200sp"
-            android:layout_marginTop="5sp"
+            android:layout_marginTop="20sp"
             android:textSize="15sp"
-            android:hint="@string/mNutValue" />
+            android:text="@string/mNutValue" />
 
         <TextView
             android:id="@+id/mNutResult"
@@ -192,7 +192,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/dextroseHeadline"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20sp"
             android:layout_marginEnd="50sp"
             android:hint="@string/nullValue"
             android:textSize="15sp" />
@@ -207,15 +207,15 @@
             android:text="@string/fragrantPepperHeadline"
             android:textSize="15sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/fragrantPepperProportions"
-            android:layout_width="60sp"
-            android:layout_height="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/mNutHeadline"
             android:layout_marginStart="200sp"
-            android:layout_marginTop="5sp"
+            android:layout_marginTop="20sp"
             android:textSize="15sp"
-            android:hint="@string/fragrantPepperValue" />
+            android:text="@string/fragrantPepperValue" />
 
         <TextView
             android:id="@+id/fragrantPepperResult"
@@ -223,7 +223,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/mNutHeadline"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20sp"
             android:layout_marginEnd="50sp"
             android:hint="@string/nullValue"
             android:textSize="15sp" />
@@ -238,15 +238,15 @@
             android:text="@string/blackPepperHeadline"
             android:textSize="15sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/blackPepperProportions"
-            android:layout_width="60sp"
-            android:layout_height="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/fragrantPepperHeadline"
             android:layout_marginStart="200sp"
-            android:layout_marginTop="5sp"
+            android:layout_marginTop="20sp"
             android:textSize="15sp"
-            android:hint="@string/blackPepperValue" />
+            android:text="@string/blackPepperValue" />
 
         <TextView
             android:id="@+id/blackPepperResult"
@@ -254,7 +254,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/fragrantPepperHeadline"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20sp"
             android:layout_marginEnd="50sp"
             android:hint="@string/nullValue"
             android:textSize="15sp" />
@@ -269,15 +269,15 @@
             android:text="@string/whitePepperHeadline"
             android:textSize="15sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/whitePepperProportions"
-            android:layout_width="60sp"
-            android:layout_height="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/blackPepperHeadline"
             android:layout_marginStart="200sp"
-            android:layout_marginTop="5sp"
+            android:layout_marginTop="20sp"
             android:textSize="15sp"
-            android:hint="@string/whitePepperValue" />
+            android:text="@string/whitePepperValue" />
 
         <TextView
             android:id="@+id/whitePepperResult"
@@ -285,7 +285,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/blackPepperHeadline"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20sp"
             android:layout_marginEnd="50sp"
             android:hint="@string/nullValue"
             android:textSize="15sp" />
@@ -300,15 +300,15 @@
             android:text="@string/garlicHeadline"
             android:textSize="15sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/garlicProportions"
-            android:layout_width="60sp"
-            android:layout_height="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/whitePepperHeadline"
             android:layout_marginStart="200sp"
-            android:layout_marginTop="5sp"
+            android:layout_marginTop="20sp"
             android:textSize="15sp"
-            android:hint="@string/garlicValue" />
+            android:text="@string/garlicValue" />
 
         <TextView
             android:id="@+id/garlicResult"
@@ -316,7 +316,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/whitePepperHeadline"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20sp"
             android:layout_marginEnd="50sp"
             android:hint="@string/nullValue"
             android:textSize="15sp" />
@@ -331,15 +331,15 @@
             android:text="@string/ascorbateHeadline"
             android:textSize="15sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/ascorbateProportions"
-            android:layout_width="60sp"
-            android:layout_height="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/garlicHeadline"
             android:layout_marginStart="200sp"
-            android:layout_marginTop="5sp"
-            android:textSize="15sp"
-            android:hint="@string/ascorbateValue" />
+            android:layout_marginTop="20sp"
+            android:text="@string/ascorbateValue"
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/ascorbateResult"
@@ -347,7 +347,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/garlicHeadline"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20sp"
             android:layout_marginEnd="50sp"
             android:hint="@string/nullValue"
             android:textSize="15sp" />
@@ -362,15 +362,15 @@
             android:text="@string/phosphateHeadline"
             android:textSize="15sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/phosphateProportions"
-            android:layout_width="60sp"
-            android:layout_height="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/ascorbateHeadline"
             android:layout_marginStart="200sp"
-            android:layout_marginTop="5sp"
+            android:layout_marginTop="20sp"
             android:textSize="15sp"
-            android:hint="@string/phosphateValue" />
+            android:text="@string/phosphateValue" />
 
         <TextView
             android:id="@+id/phosphateResult"
@@ -378,7 +378,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/ascorbateHeadline"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20sp"
             android:layout_marginEnd="50sp"
             android:hint="@string/nullValue"
             android:textSize="15sp" />
@@ -393,15 +393,15 @@
             android:text="@string/waterHeadline"
             android:textSize="15sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/waterProportions"
-            android:layout_width="60sp"
-            android:layout_height="36sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/phosphateHeadline"
             android:layout_marginStart="200sp"
-            android:layout_marginTop="5sp"
+            android:layout_marginTop="20sp"
             android:textSize="15sp"
-            android:hint="@string/waterValue" />
+            android:text="@string/waterValue" />
 
         <TextView
             android:id="@+id/waterResult"
@@ -409,7 +409,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/phosphateHeadline"
             android:layout_alignParentEnd="true"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="20sp"
             android:layout_marginEnd="50sp"
             android:hint="@string/nullValue"
             android:textSize="15sp" />
