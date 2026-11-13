@@ -10,7 +10,6 @@
     <string name="infoButton">i</string>
 
 
-
     <!-- Краковскккая колбаса -->
     <string name="massHeadline">Введите итоговую массу (г):</string>
     <string name="massInput">0</string>
@@ -28,6 +27,7 @@
     <string name="ascorbateHeadline">АСКОРБАТ</string>
     <string name="phosphateHeadline">ФОСФАТ</string>
     <string name="waterHeadline">ВОДА</string>
+    <string name="membraneHeadline">Требуется 0 шт. оболочки по 30 см.</string>
 
     <string name="saltValue">18</string>
     <string name="dextroseValue">3</string>

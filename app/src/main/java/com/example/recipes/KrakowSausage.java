@@ -35,7 +35,8 @@ public class KrakowSausage extends AppCompatActivity {
             garlicResult,
             ascorbateResult,
             phosphateResult,
-            waterResult;
+            waterResult,
+            membraneHeadline;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +62,7 @@ public class KrakowSausage extends AppCompatActivity {
         ascorbateResult = findViewById(R.id.ascorbateResult);
         phosphateResult = findViewById(R.id.phosphateResult);
         waterResult = findViewById(R.id.waterResult);
+        membraneHeadline = findViewById(R.id.membraneHeadline);
 
         calculatorButton = findViewById(R.id.calculatorButton);
         clearButton = findViewById(R.id.clearButton);
@@ -88,7 +90,8 @@ public class KrakowSausage extends AppCompatActivity {
                             garlicPart = 0.004,
                             ascorbatePart = 0.0005,
                             phosphatePart = 0.003,
-                            waterPart = 0.05;
+                            waterPart = 0.05,
+                            membranePart = 380.0        ;
 
                     double saltResultValue = massInputValue * saltPart,
                             dextroseResultValue = massInputValue * dextrosePart,
@@ -99,7 +102,8 @@ public class KrakowSausage extends AppCompatActivity {
                             garlicResultValue = massInputValue * garlicPart,
                             ascorbateResultValue = massInputValue * ascorbatePart,
                             phosphateResultValue = massInputValue * phosphatePart,
-                            waterResultValue = massInputValue * waterPart;
+                            waterResultValue = massInputValue * waterPart,
+                            membraneResultValue = massInputValue / membranePart;
 
                     saltResult.setText(String.valueOf(Math.round(saltResultValue * 10) / 10.0));
                     dextroseResult.setText(String.valueOf(Math.round(dextroseResultValue * 10) / 10.0));
@@ -111,6 +115,9 @@ public class KrakowSausage extends AppCompatActivity {
                     ascorbateResult.setText(String.valueOf(Math.round(ascorbateResultValue * 10) / 10.0));
                     phosphateResult.setText(String.valueOf(Math.round(phosphateResultValue * 10) / 10.0));
                     waterResult.setText(String.valueOf(Math.round(waterResultValue * 10) / 10.0));
+                    String strMembrane = "Требуется " + String.valueOf(Math.round(membraneResultValue * 10) / 10.0) +
+                            " шт. оболочки по 30 см.";
+                    membraneHeadline.setText(strMembrane);
                 }
             }
         });
@@ -129,6 +136,7 @@ public class KrakowSausage extends AppCompatActivity {
                 ascorbateResult.setText("0");
                 phosphateResult.setText("0");
                 waterResult.setText("0");
+                membraneHeadline.setText(R.string.membraneHeadline);
             }
         });
 
@@ -146,17 +154,16 @@ public class KrakowSausage extends AppCompatActivity {
                 builder.setTitle("Информация");
                 builder.setMessage("Мясо солить 5 дней\n" +
                         "Мясо/жир: 75%/25%\n" +
-                        "Жирная: средняя решетка\n" +
-                        "Полужирная: подрезная решетка\n" +
-                        "Мясо: 1/3 мелкая\n" +
-                        "Мясо: 1/3 крупная\n" +
-                        "Мясо: 1/3 подрезная\n" +
                         "Жир вмешивать руками\n" +
-                        "оболочка коллагеновая 45 мм\n" +
-                        "оболочку отрезать по 25 см\n" +
-                        "350 г фарша в 1 батон\n" +
-                        "\n" +
-                        "копчение до 65 град 20 мин\n"
+                        "Жирная: средняя решетка\n" +
+                        "Полужирная: подрезная решетка\n\n" +
+                        "Мясо 1/3 мелкая\n" +
+                        "Мясо 1/3 крупная\n" +
+                        "Мясо 1/3 подрезная\n\n" +
+                        "Оболочка коллагеновая 45 мм\n" +
+                        "Оболочку отрезать по 25 см\n" +
+                        "350 г фарша в 1 батон\n\n" +
+                        "Копчение до 65°С - 20 мин"
                 );
                 builder.setPositiveButton("ОК", new DialogInterface.OnClickListener() {
                     @Override
